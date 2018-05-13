@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+       
+    <!-- 处理器 ，启用包扫描，自动扫描包实体，@Component @Controller @Service @Repositry-->
+ 	<context:component-scan base-package="edu.hnust.shanon.controller"></context:component-scan>   
+  	
+  	<!-- 注解处理器映射器、适配器,启用注解驱动 -->
+  	<mvc:annotation-driven />
+  	<mvc:default-servlet-handler/>
+  	<mvc:resources location="/WEB-INF/css/" mapping="/css/**"></mvc:resources>
+  	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"></mvc:resources>
+  	<mvc:resources location="/WEB-INF/image/" mapping="/image/**"></mvc:resources>
+  	<mvc:resources location="/WEB-INF/audio/" mapping="/audio/**"></mvc:resources>
+   	<!-- 注解处理器映射器 	
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"></bean>
+  	 注解处理器适配器 
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"></bean> -->
+   
+    <!-- 视图解析器 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver ">
+		<property name="prefix" value="/WEB-INF/jsp/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>	
+	
+</beans>

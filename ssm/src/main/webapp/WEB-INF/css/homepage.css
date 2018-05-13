@@ -1,0 +1,180 @@
+.shanon-homepage-search{
+	width: 100%;
+	height: 10%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.shanon-homepage-search-left{
+	float: left;
+	height: 1%;
+	margin: 0 10%;
+	width: auto;
+}
+.shanon-homepage-search-center{	
+	width: 50%;
+	float: left;
+	margin-top: 1.5%;
+}
+.shanon-homepage-search-center-text{
+	width: 30%;
+	height: 20px;
+	border-radius: 10px;
+	border: 1px solid #BFBFBF;
+	margin: 0 1%;
+	outline: none;
+	padding: 0 5px;
+}
+.shanon-homepage-search-center-search{
+	margin-left: 1.5%;
+	width: 6%;
+	height: 25px;
+	border: 1px solid #BFBFBF;
+	border-radius: 5px;
+	outline: none;
+	background: #1296DB;
+}
+.shanon-homepage-search-center-search:hover{
+	background: #BFBFBF;
+	color: #1296DB;
+}
+.shanon-homepage-search-center-search:active{
+	background: #1296DB;
+}
+.shanon-homepage-search-right{
+	float: right;
+	margin-top: 1.5%;
+	margin-right: 5%;
+	color: white;
+}
+.shanon-homepage-nav{
+	width: 100%;
+	height: 90%;
+	top: 10%;
+	left: 0px;
+	position: absolute;
+}
+.shanon-homepage-nav-select{
+	width: 15%;
+	height: 100%;
+	position: absolute;
+}
+.shanon-homepage-nav-select-option{
+	width: 100%;
+	height: 10%;
+	position: relative;
+	font-size: 18px;
+	border: none;
+	border-bottom: 1px solid #BFBFBF;
+	outline: none;
+	background: #1296DB;
+	color: white;
+}
+.shanon-homepage-nav-select-option:hover {
+	background: #BFBFBF;
+	color: #1296DB;
+}
+.shanon-homepage-nav-select-option:active{
+	background: #1296DB;
+	color: white;
+}
+.shanon-homepage-nav-content{
+	width: 60%;
+	height: 100%;
+	position: relative;
+	left: 15%;
+}
+.shanon-homepage-nav-content-picture{
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+}
+.shanon-homepage-nav-content-picture-option{
+	width: 400%;
+	height: 100%;
+	position: relative;
+}
+.shanon-homepage-nav-content-picture-list{
+	width: 25%;
+	height: 100%;
+	position: absolute;	
+}
+.shanon-homepage-nav-content-picture-two{
+	margin-left: 25%;
+}
+.shanon-homepage-nav-content-picture-three{
+	margin-left: 50%;
+}
+.shanon-homepage-nav-content-picture-four{
+	margin-left: 75%;
+}
+@keyframes picchange{
+	0% {right: 0px;}
+	25% {right: 0%;}
+	25.1% {right: 100%;}
+	50% {right: 100%;}
+	50.1% {right: 200%;}
+	75% {right: 200%;}
+	75.1% {right: 300%;}
+	100% {right: 300%;}
+}
+.shanon-homepage-nav-content-picture-option{
+	animation-name: picchange;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+.shanon-homepage-nav-extra{
+	width: 25%;
+	height: 100%;
+	position: relative;
+	left: 75%;
+	bottom: 100%;
+	background: #1296DB;
+}
+.shanon-homepage-nav-extra-traffic{
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+.shanon-homepage-nav-extra-traffic-list{
+	width: 18%;
+	height: 15%;
+	position: relative;
+	border: none;
+	color: white;
+	left:  3%;
+	font-size: 18px;
+	outline: none;	
+	text-align: center;
+	background: none;
+}
+.shanon-homepage-nav-extra-traffic-list:hover {
+	color: #f4ea2a;
+	font-size: 20px;
+}
+.shanon-homepage-nav-extra-traffic-list:active{
+	color: #f4ea2a;
+	font-size: 16px;
+}
+.shanon-homepage-nav-extra-traffic-route{
+	width: 100%;
+	height: 80%;
+}
+.shanon-homepage-nav-extra-accommodation{
+	width: 100%;
+	height: 50%;
+	position: relative;
+	border-top: 1px solid #BFBFBF;
+}
+.shanon-homepage-plan{
+	width: 100%;
+	height: 200%;
+	position:absolute;
+	top: 100%;
+	border-top: 1px solid #BFBFBF;	
+}
+
+
+
+
+

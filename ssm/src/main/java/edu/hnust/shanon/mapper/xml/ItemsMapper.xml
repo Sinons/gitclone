@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.hnust.shanon.mapper.items.ItemsMapper">
+	<resultMap type="edu.hnust.shanon.po.Items" id="userDetails">
+		<id column="id" property="id"/>
+		<result column="name" property="name"/>
+		<result column="sort" property="sort"/>
+		<result column="price" property="price"/>
+		<result column="shop_id" property="shop_id"/>
+		<result column="source" property="source"/>
+		<result column="image" property="image"/>
+		<result column="brand" property="brand"/>
+		<result column="sales" property="sales"/>
+		<result column="comprehensive" property="comprehensive"/>
+		<result column="free" property="free"/>
+	</resultMap>
+
+	<select id="queryAll" resultMap="userDetails">
+		select * from commodity where (sort like '%${keyHandler}%') or (name like '%${keyHandler}%')	
+	</select>
+	
+   <!--  <insert id="saveCommodity" parameterType="edu.hnust.shanon.po.Items">
+		insert into commodity(id,name,sort,price,shop_id,source,image,brand,sales,comprehensive,free) values(null,#{name},#{sort},#{price},#{shop_id},#{source},#{image},#{brand},#{sales},#{comprehensive},#{free})
+	</insert>  -->
+	
+</mapper>

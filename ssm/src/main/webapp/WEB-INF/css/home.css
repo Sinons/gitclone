@@ -1,0 +1,110 @@
+html{
+	overflow-x: hidden;
+}
+#main{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0em;
+	left: 0em;
+}
+@keyframes tooltips{
+	from {background-color: rgba(0,0,0,0.6);color: rgba(255,255,255,1);}
+	to {background-color: rgba(0,0,0,0);color: rgba(255,255,255,0);}	
+}
+#main-top{
+	width: 100%;
+	height: 2em;
+	float: left;
+	background: #F1F1F1;
+	color: #6E6E6E;
+	padding-top: 0.3em;
+	white-space: nowrap;
+}
+.main-top-list{
+	font-size: 0.8em;
+	margin-left: 1em;
+	text-decoration: none;
+	color: inherit;
+}
+.main-top-list:hover{
+	color: green;
+
+}
+.main-top-login{
+	margin-left: 15em;
+}
+.main-top-mine{
+	margin-left: 50em;
+}
+#main-center{
+	width: 100%;
+	height: 10em;
+	float: left;
+}
+.main-center-icon{
+	width: 8em;
+	height: 8em;
+	float:left;
+	margin-left: 10em;
+	margin-top: 1em;
+}
+.main-center-content{
+ 	width: 50em;
+	height: 6em;
+	position: relative;
+	left: 25em;
+	top: 1em;
+	white-space: nowrap;
+}
+.main-center-content-search{
+	width: 80%;
+	height: 2.5em	;
+	position: relative;
+	top: 1em;
+	left: 10%;
+}
+.search-input{
+	width: 80%;
+	height: 2.5em;
+	left: 0em;
+	position: absolute;
+	padding-left: 1em;
+	border: 0.1em solid green;
+	outline: none;
+}
+.search-button{
+	width: 10%;
+	height: 2.8em;
+	position: absolute;
+	background: green;
+	border: none;
+	left: 82.5%;
+	color: white;
+}
+.main-center-content-stream{
+	width: 80%;
+	height: 2em;
+	position: absolute;
+	margin-top: 1em;
+	padding-top: 0.5em;
+	left: 10%;
+	text-align: left;
+}
+.stream-list{
+	margin-left: 1em;
+	color: #6E6E6E;
+	text-decoration: none;
+}
+.stream-list:hover{
+	color: green;
+}
+.main-bottom{
+	width: 100%;
+	height: auto;
+	border: 0.1em solid green;
+}
+
+
+
+
