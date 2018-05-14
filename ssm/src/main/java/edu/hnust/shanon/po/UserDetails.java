@@ -11,7 +11,14 @@ public class UserDetails {
 	private String name;
 	private String nick;
 	private Date create_date;
+	private String member;
 	
+	public String getMember() {
+		return member;
+	}
+	public void setMember(String member) {
+		this.member = member;
+	}
 	public int getId() {
 		return id;
 	}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.hnust.shanon.mapper.login.LoginMapper">
+
+	<select id="select" parameterType="edu.hnust.shanon.po.Users" resultType="edu.hnust.shanon.po.UserDetails">
+		select * from users_information where phone=#{phone} and password=#{password}	
+	</select>
+	
+	<insert id="save" parameterType="edu.hnust.shanon.po.UserDetails">
+		insert into users_information values(null,#{phone},#{password},#{address_id},#{name},#{nick},#{create_date})
+	</insert>
+</mapper>

@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 import edu.hnust.shanon.po.Items;
+import edu.hnust.shanon.po.UserDetails;
 
 //自动生成数据工具类
 public class AutoCreateItemsUtils {
@@ -18,7 +19,7 @@ public class AutoCreateItemsUtils {
 	static final int PRICE = 5000;
 	static final int SALES = 10000;
 	static final int SHOPID = 1000;
-	public List<Items> createCommodities(String type,int number){
+	public static List<Items> createCommodities(String type,int number){
 		List<Items> list = new ArrayList<Items>();
 		
 		if(type==COMMODITIES) {
@@ -75,5 +76,16 @@ public class AutoCreateItemsUtils {
 			}	
 		}
 		return list;
+	}
+	public static List<UserDetails> createUsers(int number){
+		 
+	    int id;
+		String phone;
+		String password;
+		int address_id;
+		String name;
+		String nick;
+		Date create_date;
+		return null;
 	}
 }

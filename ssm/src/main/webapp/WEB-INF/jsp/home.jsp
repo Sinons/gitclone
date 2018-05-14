@@ -44,13 +44,20 @@
 				</div>
 			</div>
 		</div>
-		<div id="main-bottom" style="width: 100%;height: auto;position: relative;top: 11em; border-top: 0.1em solid green;">
-		  <div class="display-list" v-for="items in gData" style="display: none;width: 12em;height: 15em;border: 0.1em solid green;">
+		<div id="main-bottom" style="width: 100%;height: auto;position: relative;top: 11em;">
+		  <div class="display-list" v-for="items in data" style="display: none;width: 12em;height: 19em;border: 0.1em solid green;margin:1em;">
  		    <img :src='items.image' alt="图片走丢了" style="width: 100%;height: 12em;">
-    		<span class="items-list">{{items.name}}</span>
-		  	<span class="items-list">{{items.price}}</span>
-		  	<span class="items-list">{{items.source}}</span>
-		  	<span class="items-list">{{items.sales}}</span>
+    		<a href="#"> <span class="items-list">&nbsp产品:&nbsp&nbsp{{items.name}}</span></a>
+    		<a href="#" style="text-decoration: underline;">&nbsp&nbsp加入购物车</a>
+    		<br/>
+		  	<a href="#"><strong class="items-list">&nbsp价格:&nbsp&nbsp{{items.price}}￥</strong></a>
+		  	<br/>
+		  	<a href="#"><span class="items-list">&nbsp发货地:&nbsp&nbsp{{items.source}}</span></a>
+		  	<br/>
+		  	<a href="#"><span class="items-list">&nbsp月销量:&nbsp&nbsp{{items.sales}}</span></a>
+	  		<br/>
+	  		<a href="#"><span class="items-list">&nbsp包邮:&nbsp&nbsp{{items.free}}</span>	</a>
+	  		<a href="#" style="text-decoration: underline;">&nbsp&nbsp立即购买</a>
 		  </div>
 		</div>
 	</div>

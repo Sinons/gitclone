@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import edu.hnust.shanon.po.Items;
+import edu.hnust.shanon.po.ItemsToDisplay;
 import edu.hnust.shanon.service.ItemsService;
 import edu.hnust.shanon.utils.SpiderSourceUtils;
 import us.codecraft.webmagic.Spider;
@@ -19,8 +20,8 @@ public class HomeController {
 	private ItemsService itemService;
 	//private String reg = "https://search.jd.com/Search?keyword=ÊÖ»ú&&enc=utf-8";
 	@RequestMapping(value="/search",method=RequestMethod.GET,produces="application/json")
-	public List<Items> queryCommodities(@RequestParam String keyWords) {
-		List<Items> itemsList = itemService.queryAll(keyWords);
+	public List<ItemsToDisplay> queryCommodities(@RequestParam String keyWords) {
+		List<ItemsToDisplay> itemsList = itemService.queryAll(keyWords);
 		if(itemsList!=null && itemsList.size()!=0) {
 			return itemsList;
 		}

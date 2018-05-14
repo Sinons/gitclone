@@ -1,8 +1,10 @@
 $(function(){
-	gData="";
-	vue = new Vue({
+	
+	vm = new Vue({
 		el:"#main-bottom",
-		data: gData,
+		data:{
+			data:[]
+		},
 	});
 	$(".search-button").on('click',function(){
 		inputListener();
@@ -12,6 +14,7 @@ $(function(){
 			inputListener();	
 		}
 	});
+	scrollListener();
 	
 })
 
@@ -24,8 +27,7 @@ function sendAjax(){
 		dataType: "json",
 		type: "GET",
 		success: function(result){
-			gData = result;
-			alert(vue.gData);
+			vm.data = result;
 			$(".display-list").each(function(){this.style.display='block'});
 		},
 		error: function(){
@@ -45,4 +47,19 @@ function tooltip(tips){
 	$("#main").append("<div id='tooltips'>"+ tips +"</div>");
 	$("#tooltips").css({'width': '15em','height': '3em','position': 'absolute','left': '30em','top': '0.5em','padding': '0.1em','z-index': '10','color': 'rgba(255,255,255,0)'});
 	$("#tooltips").css({'animation':'tooltips 5s'});
+}
+function scrollListener(){
+	$(window).scroll(function(){
+		if($("#main-bottom").offset().top<($("#main-center").offset().top + $("#main-center").height())){
+			$("#main-center").css({
+				'background-color': 'rgb(41,41,41,0.5)',
+				'border':'none',
+			})
+		}else{
+			$("#main-center").css({
+				'background-color': 'rgb(255,255,255,1)',
+				'border-bottom': '0.1em solid green',
+			})
+		}
+	});
 }
