@@ -13,11 +13,13 @@
 	  <script type="text/javascript" charset="utf-8" src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
   	  <script type="text/javascript" charset="utf-8" src="/ssm/js/jquery-3.2.1.js"></script>
   	  <script type="text/javascript" charset="utf-8" src="/ssm/js/user.js"></script>
-  	   <script type="text/javascript" charset="utf-8" src="/ssm/js/vue.min.js"></script>
+  	  <script type="text/javascript" charset="utf-8" src="/ssm/js/vue.min.js"></script>
 </head>
 <body>
+  <div class="container-fluid" style="background-color: rgba(41,41,41,0.2)">
 	<h2 class="text-center">我的阁楼</h2>
 	<h4 class="text-right" style="margin-right: 2em;"><a href="/ssm/index">返回首页</a></h4>
+  </div>
 	<nav class="navbar navbar-default" role="navigation">
 	 
 	    <ul class="nav nav-pills nav-justified">
@@ -45,7 +47,7 @@
 	    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
 		  <ul class="list-group">	
 			<li class="list-group-item"><h4>余额</h4></li>
-			<li class="list-group-item"><h4>银行卡<a class="glyphicon glyphicon-chevron-up" style="margin-left: 70%;"></a></h4></li>
+			<li class="list-group-item"><h4>银行卡<a class="caret" style="margin-left: 70%;"></a></h4></li>
 			<li class="list-group-item">
 			  <h4>添加银行卡<a class="glyphicon glyphicon-plus"></a></h4>
 			  <ul>

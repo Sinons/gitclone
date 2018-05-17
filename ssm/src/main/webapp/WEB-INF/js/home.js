@@ -3,7 +3,7 @@ $(function(){
 	vm = new Vue({
 		el:"#main-bottom",
 		data:{
-			data:[]
+			data:0,
 		},
 	});
 	$(".search-button").on('click',function(){
@@ -28,8 +28,7 @@ function sendAjax(){
 		type: "GET",
 		success: function(result){
 			vm.data = result;
-			$(".display-list").each(function(){this.style.display='block'});
-		},
+		},	
 		error: function(){
 			tooltip("客官,没找到您要的商品");
 		}
@@ -54,12 +53,12 @@ function scrollListener(){
 			$("#main-center").css({
 				'background-color': 'rgb(41,41,41,0.5)',
 				'border':'none',
-			})
+			});
 		}else{
 			$("#main-center").css({
 				'background-color': 'rgb(255,255,255,1)',
 				'border-bottom': '0.1em solid green',
-			})
+			});
 		}
 	});
 }

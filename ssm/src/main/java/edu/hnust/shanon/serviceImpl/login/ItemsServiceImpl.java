@@ -9,7 +9,6 @@ import edu.hnust.shanon.po.Items;
 import edu.hnust.shanon.po.ItemsToDisplay;
 import edu.hnust.shanon.service.ItemsService;
 import edu.hnust.shanon.utils.DivideWordsUtils;
-
 @Service
 public class ItemsServiceImpl implements ItemsService{
 	
@@ -28,7 +27,7 @@ public class ItemsServiceImpl implements ItemsService{
 		for(int i=0;i<list.size();i++) {
 			result = itemsMapper.queryAll(list.get(i));
 			if(result!=null && result.size()>0){
-				itemsToDisplayList = new ArrayList<>();
+				itemsToDisplayList = new ArrayList<ItemsToDisplay>();
 				for(int j=0;j<result.size();j++) {
 					ItemsToDisplay itemsToDisplay = new ItemsToDisplay();
 					itemsToDisplay.setImage(result.get(j).getImage());
@@ -50,5 +49,4 @@ public class ItemsServiceImpl implements ItemsService{
 	public void saveCommodity(Items items) {
 		itemsMapper.saveCommodity(items);
 	}
-
 }

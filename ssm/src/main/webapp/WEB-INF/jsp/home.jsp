@@ -20,7 +20,7 @@
 			<a class="main-top-list main-top-login" href="/ssm/login">登录</a>
 			<a class="main-top-list main-top-sign" href="/ssm/register">我要注册</a>
 			<a class="main-top-list main-top-mine" href="/ssm/user">我的阁楼</a>
-			<a class="main-top-list main-top-trolley" href="#">购物车</a>
+			<a class="main-top-list main-top-trolley" href="/ssm/trolley">购物车</a>
 		</div>
 		<div id="main-center">
 			<div class="main-center-list main-center-icon">
@@ -45,7 +45,7 @@
 			</div>
 		</div>
 		<div id="main-bottom" style="width: 100%;height: auto;position: relative;top: 11em;">
-		  <div class="display-list" v-for="items in data" style="display: none;width: 12em;height: 19em;border: 0.1em solid green;margin:1em;">
+		  <div class="display-list" v-show="data!=0" v-for="items in data" style="display: none;width: 12em;height: 19em;border: 0.1em solid green;margin:1em;">
  		    <img :src='items.image' alt="图片走丢了" style="width: 100%;height: 12em;">
     		<a href="#"> <span class="items-list">&nbsp产品:&nbsp&nbsp{{items.name}}</span></a>
     		<a href="#" style="text-decoration: underline;">&nbsp&nbsp加入购物车</a>

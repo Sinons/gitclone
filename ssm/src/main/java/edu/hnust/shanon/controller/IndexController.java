@@ -27,4 +27,8 @@ public class IndexController {
 	public String user(){
 		return "user";
 	}
+	@RequestMapping("/trolley")
+	public String trolley() {
+		return "trolley";
+	}
 }
